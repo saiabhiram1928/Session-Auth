@@ -1,0 +1,22 @@
+<h1>Singup page</h1>
+{{#if msg}} 
+<h1>{{msg}}</h1>
+{{/if}}
+<form action="/signup" method="POST">
+
+<label for="username">
+    username : 
+    <input type="text" name="name" id="name">
+</label>
+<label for="email">
+email : 
+<input type="email" name="email" id="email">
+</label>
+<label for="passwd">
+    password : 
+    <input type="password" name="passwd" id="passwd">
+</label>
+<button type="submit">submit</button>
+</form>
+<h1><a href="/login">Already have a account</a></h1>
+<h3><a href="/">home</a></h3>
